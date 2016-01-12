@@ -1,0 +1,6 @@
+angular.module("app.templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("components/about/about.html","About Me");
+$templateCache.put("components/admin/admin.html","Admin\n<hr/>\n<ng-outlet></ng-outlet>");
+$templateCache.put("components/dashboard/dashboard.html","<p>\n	Dashboard\n</p>");
+$templateCache.put("components/app/app.html","<nav class=\"navbar navbar-default\">\n  <ul class=\"nav navbar-nav\">\n    <li><a ng-link=\"[\'/Home\']\">Home</a></li>\n    <li><a ng-link=\"[\'/About\', { name: \'Me\' }]\">About</a></li>\n    <li><a ng-link=\"[\'/Login\']\">Login</a></li>\n    <li><a ng-link=\"[\'/Admin\', \'Dashboard\']\">Dashboard</a></li>\n  </ul>\n</nav>\n<main>\n  <ng-outlet></ng-outlet>\n</main>\n");
+$templateCache.put("components/home/home.html","Home");
+$templateCache.put("components/login/login.html","<form ng-if=\"!vm.authenticated\">\n	<input type=\"text\" ng-model=\"vm.username\">\n	<input type=\"password\" ng-model=\"vm.password\">\n	<button ng-click=\"vm.login()\" value=\"Login\">Login</button>\n</form>\n<p ng-if=\"vm.authenticated\">You are logged in!</p>\n");}]);
