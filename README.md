@@ -4,7 +4,7 @@ An Angular 1.x example app using the component router and module component helpe
 
 ## demo
 
-`http://oknp.github.io/angularjs-component-router`
+http://oknp.github.io/angularjs-component-router
 
 ## Installation
 
